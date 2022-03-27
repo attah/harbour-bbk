@@ -15,22 +15,17 @@ ApplicationWindow {
                     WebEngineSettings.pixelRatio = 3;
                 }
 
-            }
-            Timer {
-                id: timer
-                interval: 100; running: true; repeat: true
-                onTriggered: {
-                    if(webView.loaded)
+                onLoadedChanged: {
+                    if(loaded)
                     {
                         webView.runJavaScript('var metaTag=document.createElement("meta");' +
                                               'metaTag.name = "viewport";' +
                                               'metaTag.content = "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0";' +
                                               'document.getElementsByTagName("head")[0].appendChild(metaTag);');
-                        timer.stop();
                     }
                 }
-            }
 
+            }
 
         }
     }
