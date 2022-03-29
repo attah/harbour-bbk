@@ -4,6 +4,8 @@ import Sailfish.WebView 1.0
 import Sailfish.WebEngine 1.0
 
 ApplicationWindow {
+    cover: null
+
     initialPage: Component {
         WebViewPage {
             WebView {

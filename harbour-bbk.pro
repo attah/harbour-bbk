@@ -94,7 +94,6 @@ HEADERS +=upstream/src/cli/utils.h \
 
 
 DISTFILES += qml/harbour-bbk.qml \
-    qml/cover/CoverPage.qml \
     rpm/harbour-bbk.changes.in \
     rpm/harbour-bbk.changes.run.in \
     rpm/harbour-bbk.spec \
