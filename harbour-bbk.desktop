@@ -5,6 +5,7 @@ Icon=harbour-bbk
 Exec=harbour-bbk
 Name=BBK
 [X-Sailjail]
-Permissions=Internet;WebView
+Sandboxing=Disabled
+#Permissions=Internet;WebView
 OrganizationName=net.attah
-ApplicationName=bredbandskollen
+ApplicationName=bbk
