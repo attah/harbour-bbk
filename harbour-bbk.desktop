@@ -6,6 +6,6 @@ Exec=harbour-bbk
 Name=BBK
 [X-Sailjail]
 Sandboxing=Disabled
-#Permissions=Internet;WebView
+Permissions=Internet;WebView
 OrganizationName=net.attah
 ApplicationName=bbk
