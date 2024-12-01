@@ -14,6 +14,8 @@ TARGET = harbour-bbk
 
 CONFIG += sailfishapp
 
+DEFINES += NO_EXTERNAL_CMD=1
+
 SOURCES += src/harbour-bbk.cpp \
            upstream/src/cli/utils.cpp \
            upstream/src/measurement/defs.cpp \
@@ -38,6 +40,7 @@ SOURCES += src/harbour-bbk.cpp \
            upstream/src/http/http_common.cpp \
            upstream/src/http/httpclientconnection.cpp \
            upstream/src/http/httpserverconnection.cpp \
+           upstream/src/http/singlerequest.cpp \
            upstream/src/json11/json11.cpp \
            upstream/src/measurement/measurementtask.cpp \
            upstream/src/measurement/singlerequesttask.cpp \
